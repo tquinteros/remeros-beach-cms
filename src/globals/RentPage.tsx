@@ -1,11 +1,10 @@
-// src/payload/globals/RentPage.ts
 import type { GlobalConfig } from 'payload'
 
 export const RentPage: GlobalConfig = {
   slug: 'rent-page',
   label: 'Página de Renta',
   admin: {
-    group: 'Páginas', // agrupa en el sidebar del CMS
+    group: 'Globals', // ← esto lo mueve junto a Header y Footer
   },
   fields: [
     {
@@ -15,13 +14,13 @@ export const RentPage: GlobalConfig = {
       fields: [
         { name: 'title', type: 'text', label: 'Título' },
         { name: 'subtitle', type: 'textarea', label: 'Subtítulo' },
-        { name: 'backgroundImage', type: 'upload', relationTo: 'media' },
+        { name: 'backgroundImage', type: 'upload', relationTo: 'media', label: 'Imagen de fondo' },
       ],
     },
     {
       name: 'sectionTitle',
       type: 'text',
-      label: 'Título de la sección de condominios',
+      label: 'Título sección condominios',
     },
     {
       name: 'bottomContent',
