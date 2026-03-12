@@ -34,7 +34,7 @@ export function FiltersBar({ minPrice, maxPrice }: { minPrice: number; maxPrice:
         <option value="4">4+ dormitorios</option>
       </select>
 
-      <select
+      {/* <select
         defaultValue={searchParams.get('maxPrice') ?? ''}
         onChange={(e) => updateFilter('maxPrice', e.target.value)}
         className="border rounded px-3 py-2"
@@ -43,7 +43,7 @@ export function FiltersBar({ minPrice, maxPrice }: { minPrice: number; maxPrice:
         <option value="500">Hasta $500</option>
         <option value="1000">Hasta $1000</option>
         <option value="2000">Hasta $2000</option>
-      </select>
+      </select> */}
     </div>
   )
 }

@@ -76,12 +76,11 @@ export default async function RentPage({ searchParams }: { searchParams: Promise
         )}
 
         {/* Contenido adicional al final */}
-        {pageData.bottomContent && (
+        {/* {pageData.bottomContent && (
           <div className="mt-12 prose">
-            {/* Si usas Lexical necesitarás RichText renderer */}
             {JSON.stringify(pageData.bottomContent)}
           </div>
-        )}
+        )} */}
       </div>
     </div>
   )
