@@ -49,7 +49,8 @@ export const seed = async ({
       payload.updateGlobal({
         slug: global,
         data: {
-          navItems: [],
+          updatedAt: new Date().toISOString(),
+          createdAt: new Date().toISOString(),
         },
         depth: 0,
         context: {
